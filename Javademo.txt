@@ -1,0 +1,36 @@
+public class Demo {
+	
+	public static void m1()
+	{
+		System.out.println("m1 method");
+		new Demo().m4();
+	}
+	
+	
+	public static void m2()
+	{
+		System.out.println("m2 method");
+	}
+	
+	public void m3()
+	{
+		System.out.println("m3 method");
+		Demo.m2();
+	}
+	
+	public void m4()
+	{
+		System.out.println("m4 method");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Demo.m1();
+		new Demo().m3();
+		
+		Sample sample=new Sample();
+		
+	}
+
+}
